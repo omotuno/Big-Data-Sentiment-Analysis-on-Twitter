@@ -1,2 +1,2 @@
-# weclouddata-advanced-machine-learning-project
-WeCloudData advanced Machine Learning Project 
+# Big Data Sentiment Analysis on Twitter 
+Big Data Sentiment Analysis Project  
