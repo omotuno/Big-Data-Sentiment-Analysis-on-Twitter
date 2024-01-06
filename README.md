@@ -22,14 +22,15 @@ The machine learning pipeline comprises the following steps:
    - Transformation of cleaned text data into numerical features using techniques like bag-of-words or TF-IDF vectorization.
 
 3. **Model Training:**
-   - Training of a Logistic Regression model using labeled data with sentiment labels (positive, negative, or neutral).
+   - Training of a Logistic Regression model using labeled data with sentiment labels (1 for positive,0 for negative).
 
 4. **Model Evaluation:**
-   - Calculation of accuracy, precision, recall, and F1-score to assess the model's performance.
+   - Calculation of accuracy to assess the model's performance.
 
-5. **Prediction:**
-   - Utilization of the trained model to predict sentiment for new, unseen tweets related to Black Friday.
-   - Writing prediction results to a personal S3 bucket.
+5. **Visualization:**
+   - Store the results of the sentiment analysis and predictions to Amazon S3, create tables using Athena.
+   - Visualize the data in Amazon QuickSight.
+   
 
 ## Prerequisites
 
@@ -49,12 +50,23 @@ To use this project:
 2. Load the dataset into an Amazon S3 bucket using Amazon Kinesis Data Firehose.
 3. Preprocess the dataset by cleaning the text data and transforming it into numerical features.
 4. Train a Logistic Regression model using the preprocessed data.
-5. Evaluate the accuracy of the trained model using appropriate metrics.
-6. Use the trained model to predict sentiment for new Black Friday tweets.
-7. Write the prediction results to a personal S3 bucket for further analysis or visualization.
+5. Evaluate the accuracy of the trained model using appropriate metrics..
+6. Write the prediction results to a personal S3 bucket for further analysis or visualization.
+7. Visualize the data in Athena using Amazon Quicksight
+
+
+
+## Recommendation for Future Improvement
+
+-- Use more machine learning models (random forests, neural networks)
+-- Draw a flowchart diagram showing various steps from data collection to plot generation.
+-- Build a reuseable pipleine 
+-- Clean the data further in athena and create better visualizations proviidng valuable insights using quicksight.
+
 
 ## Acknowledgment
 
 This project is inspired by Weclouddata big data course, demonstrating sentiment analysis on tweets using Apache Spark on Databricks.
 
 Feel free to customize the README further based on your preferences and additional project details!
+
