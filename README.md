@@ -1,14 +1,14 @@
-# Elon Musk Tweets Sentiment Analysis Big Project 
+# Black Friday Tweets Sentiment Analysis Big Project
 
 Sentiment analysis, also known as opinion mining, is a natural language processing approach that identifies the emotional tone behind a body of text.
 
 ## Project Overview
 
-This project focuses on sentiment analysis of tweets related to Elon Musk. The dataset is obtained from the Twitter API, stored in CSV format, and loaded into an Amazon S3 bucket via Amazon Kinesis Data Firehose. A machine learning pipeline is established to train a Logistic Regression model for supervised sentiment analysis. The model's accuracy is then calculated, and the prediction data is written to a personal S3 bucket for further analysis.
+This project focuses on sentiment analysis of tweets related to Black Friday shopping events. The dataset is obtained from the Twitter API, stored in CSV format, and loaded into an Amazon S3 bucket via Amazon Kinesis Data Firehose. A machine learning pipeline is established to train a Logistic Regression model for supervised sentiment analysis. The model's accuracy is then calculated, and the prediction data is written to a personal S3 bucket for further analysis.
 
 ## Dataset
 
-The dataset used is obtained from the Twitter API, containing tweets related to Elon Musk. It is stored in CSV format, facilitating easy ingestion and storage through Amazon Kinesis Data Firehose.
+The dataset used is obtained from the Twitter API, containing tweets related to Black Friday shopping events. It is stored in CSV format, facilitating easy ingestion and storage through Amazon Kinesis Data Firehose.
 
 ## Machine Learning Pipeline
 
@@ -28,7 +28,7 @@ The machine learning pipeline comprises the following steps:
    - Calculation of accuracy, precision, recall, and F1-score to assess the model's performance.
 
 5. **Prediction:**
-   - Utilization of the trained model to predict sentiment for new, unseen tweets related to Elon Musk.
+   - Utilization of the trained model to predict sentiment for new, unseen tweets related to Black Friday.
    - Writing prediction results to a personal S3 bucket.
 
 ## Prerequisites
@@ -45,12 +45,12 @@ To run this project, you need:
 
 To use this project:
 
-1. Obtain the Elon Musk tweet dataset in CSV format using the Twitter API.
+1. Obtain the Black Friday tweet dataset in CSV format using the Twitter API.
 2. Load the dataset into an Amazon S3 bucket using Amazon Kinesis Data Firehose.
 3. Preprocess the dataset by cleaning the text data and transforming it into numerical features.
 4. Train a Logistic Regression model using the preprocessed data.
 5. Evaluate the accuracy of the trained model using appropriate metrics.
-6. Use the trained model to predict sentiment for new Elon Musk tweets.
+6. Use the trained model to predict sentiment for new Black Friday tweets.
 7. Write the prediction results to a personal S3 bucket for further analysis or visualization.
 
 ## Acknowledgment
@@ -58,4 +58,3 @@ To use this project:
 This project is inspired by Weclouddata big data course, demonstrating sentiment analysis on tweets using Apache Spark on Databricks.
 
 Feel free to customize the README further based on your preferences and additional project details!
-
